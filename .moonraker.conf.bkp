@@ -31,6 +31,12 @@ type: web_beta
 repo: meteyou/mainsail
 path: ~/mainsail
 
+[update_manager client z_calibration]
+type: git_repo
+path: /home/pi/klipper_z_calibration
+origin: https://github.com/protoloft/klipper_z_calibration.git
+install_script: install.sh
+
 #[update_manager KlipperScreen]
 #type: git_repo
 #path: ~/KlipperScreen
