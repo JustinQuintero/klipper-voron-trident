@@ -1,48 +1,39 @@
 [server]
-host: 0.0.0.0
-port: 7125
-enable_debug_logging: True
-config_path: ~/klipper_config
-log_path: /home/pi/klipper_logs
+host = 0.0.0.0
+port = 7125
+enable_debug_logging = True
+
+[file_manager]
+config_path = ~/klipper_config
+log_path = /home/pi/klipper_logs
 
 [authorization]
-trusted_clients:
- 10.0.0.0/8
- 127.0.0.0/8
- 169.254.0.0/16
- 172.16.0.0/12
- 192.168.0.0/16
- FE80::/10
- ::1/128
-
-cors_domains:
-  http://my.mainsail.xyz
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	http://my.mainsail.xyz
 
 [octoprint_compat]
-
-#[power printer_plug]
-#type: tplink_smartplug
-#address: HS105
 
 [update_manager]
 
 [update_manager client mainsail]
-type: web_beta
-repo: meteyou/mainsail
-path: ~/mainsail
+type = web
+channel = beta
+repo = meteyou/mainsail
+path = ~/mainsail
 
 [update_manager client z_calibration]
-type: git_repo
-path: /home/pi/klipper_z_calibration
-origin: https://github.com/protoloft/klipper_z_calibration.git
-install_script: install.sh
-
-#[update_manager KlipperScreen]
-#type: git_repo
-#path: ~/KlipperScreen
-#origin: https://github.com/jordanruthe/KlipperScreen.git
-#env: ~/.KlipperScreen-env/bin/python
-#requirements: scripts/KlipperScreen-requirements.txt
-#install_script: scripts/KlipperScreen-install.sh
+type = git_repo
+path = /home/pi/klipper_z_calibration
+origin = https://github.com/protoloft/klipper_z_calibration.git
+install_script = install.sh
 
 [history]
+
