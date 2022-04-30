@@ -4,7 +4,7 @@ port = 7125
 enable_debug_logging = True
 
 [file_manager]
-config_path = ~/klipper_config
+config_path = /home/pi/klipper_config
 log_path = /home/pi/klipper_logs
 
 [authorization]
