@@ -19,7 +19,7 @@ camera="usb"
 #
 # See https://faq.octoprint.org/mjpg-streamer-config for available options
 #
-# Defaults to a resolution of 640x480 px and a framerate of 10 fps
+# Defaults to a resolution of 640x480 px and a framerate of 30 fps
 #
 camera_usb_options="-r 640x480 -f 15 -d /dev/v4l/by-id/usb-SMI_SMI-video-index0"
 
