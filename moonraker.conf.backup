@@ -18,8 +18,6 @@ trusted_clients:
 cors_domains:
   http://my.mainsail.xyz
 
-[history]
-
 [octoprint_compat]
 
 [update_manager]
@@ -30,11 +28,11 @@ channel: beta
 repo: meteyou/mainsail
 path: ~/mainsail
 
-#[update_manager client z_calibration]
-#type: git_repo
-#path: /home/pi/klipper_z_calibration
-#origin: https://github.com/protoloft/klipper_z_calibration.git
-#install_script: install.sh
+[update_manager client z_calibration]
+type: git_repo
+path: /home/pi/klipper_z_calibration
+origin: https://github.com/protoloft/klipper_z_calibration.git
+install_script: install.sh
 
 [update_manager crowsnest]
 type: git_repo
@@ -50,11 +48,4 @@ install_script: tools/install.sh
 #requirements: scripts/KlipperScreen-requirements.txt
 #install_script: scripts/KlipperScreen-install.sh
 
-# Sonar update_manager entry
-[update_manager sonar]
-type: git_repo
-path: ~/sonar
-origin: https://github.com/mainsail-crew/sonar.git
-primary_branch: main
-managed_services: sonar
-install_script: tools/install.sh
+[history]
