@@ -21,7 +21,7 @@ camera="usb"
 #
 # Defaults to a resolution of 640x480 px and a framerate of 30 fps
 #
-camera_usb_options="-r 640x480 -f 15 -d /dev/v4l/by-id/usb-SMI_SMI-video-index0"
+camera_usb_options="-r 640x480 -f 30 -d /dev/v4l/by-id/usb-SMI_SMI-video-index0"
 
 ### Additional webcam devices known to cause problems with -f
 #
@@ -47,7 +47,7 @@ camera_usb_options="-r 640x480 -f 15 -d /dev/v4l/by-id/usb-SMI_SMI-video-index0"
 #   additional_brokenfps_usb_devices=("aabb:ccdd" "aabb:eeff")
 #
 #
-#additional_brokenfps_usb_devices=()
+#additional_brokenfps_usb_devices=("090c:f37d")
 
 ### Additional options to supply to MJPG Streamer for the RasPi Cam
 #
@@ -76,4 +76,4 @@ camera_http_options="-n -p 8081"
 #
 # Available options:
 #   mjpeg [default] - stable MJPG-streamer
-camera_streamer=mjpeg
+#camera_streamer=mjpeg
