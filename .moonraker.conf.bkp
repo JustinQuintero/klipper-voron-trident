@@ -17,6 +17,8 @@ trusted_clients =
 cors_domains = 
 	http://my.mainsail.xyz
 
+[history]
+
 [octoprint_compat]
 
 [update_manager]
@@ -27,19 +29,11 @@ channel = beta
 repo = meteyou/mainsail
 path = ~/mainsail
 
-[update_manager client z_calibration]
-type = git_repo
-path = /home/pi/klipper_z_calibration
-origin = https://github.com/protoloft/klipper_z_calibration.git
-install_script = install.sh
-
 [update_manager crowsnest]
 type = git_repo
 path = ~/crowsnest
 origin = https://github.com/mainsail-crew/crowsnest.git
 install_script = tools/install.sh
-
-[history]
 
 [update_manager sonar]
 type = git_repo
