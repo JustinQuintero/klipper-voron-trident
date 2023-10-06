@@ -31,6 +31,14 @@ cors_domains =
 channel = dev
 refresh_interval = 168
 
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
+primary_branch = main
+
 [update_manager client mainsail]
 type = web
 channel = beta
@@ -63,4 +71,14 @@ primary_branch = main
 path = ~/moonraker-timelapse
 origin = https://github.com/mainsail-crew/moonraker-timelapse.git
 managed_services = klipper moonraker
+
+[update_manager mobileraker]
+type = git_repo
+path = /home/pi/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+primary_branch = main
+managed_services = mobileraker
+env = /home/pi/mobileraker-env/bin/python
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install-mobileraker-companion.sh
 
